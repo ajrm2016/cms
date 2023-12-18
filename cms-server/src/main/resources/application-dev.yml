@@ -1,0 +1,20 @@
+debug: false
+spring:
+  datasource:
+    url: jdbc:mysql://47.99.129.142:3006/cms_admin?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    username: cms_admin
+    password: cms231203@ABCD
+  jpa:
+    hibernate:
+      ddl-auto: update
+  activiti:
+    #    配置为true的时候自动检查resources/bpmn/目录下的工作流定义文件并部署到数据库表中
+    check-process-definitions: true
+    #    启动的时候配置为true初始化工作流相关表
+    database-schema-update: true
+    history-level: full
+    db-history-used: true
+    process-definition-location-prefix: classpath:/bpmn/
+server:
+  tomcat:
+    basedir: /Users/ajrm/works/NAU/4-课程学习/693/code/cms/tmp

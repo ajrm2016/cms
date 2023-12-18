@@ -1,0 +1,12 @@
+{
+  "codeConfig": {
+    "type": "com.ajrm.cms.code.CodeConfig",
+    "fields": {
+      entityModel: "cms-core",
+      daoModel: "cms-core",
+      serviceModel: "cms-core",
+      controllerModel: "cms-server",
+      viewModel: "cms-admin"
+    }
+  }
+}
